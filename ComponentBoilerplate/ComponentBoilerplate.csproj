@@ -545,10 +545,20 @@
     <Compile Include="App_Start\ApplicationConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\Sections\TwoColumnsSectionController.cs" />
     <Compile Include="Controllers\Widgets\TextAreaWidgetController.cs" />
+    <Compile Include="Models\FormComponents\LongTextCharactersCountFormComponent\LongTextCharacterCountFormComponent.cs" />
+    <Compile Include="Models\FormComponents\LongTextCharactersCountFormComponent\LongTextCharacterCountFormComponentProperties.cs" />
+    <Compile Include="Models\InlineEditors\TextAreaInlineEditorModel.cs" />
+    <Compile Include="Models\Widgets\TextAreaWidgetProperties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\FormComponents\LongTextCharacterCountFormComponent.css" />
+    <Content Include="Content\FormComponents\LongTextCharacterCountFormComponent.js" />
+    <Content Include="Content\InlineEditors\TextAreaInlineEditor.css" />
+    <Content Include="Content\InlineEditors\TextAreaInlineEditor.js" />
+    <Content Include="Content\Sections\TwoColumnSection.css" />
     <Content Include="Content\Widgets\TextAreaWidget.css" />
     <Content Include="Content\Widgets\TextAreaWidget.js" />
     <Content Include="Global.asax" />
@@ -625,9 +635,12 @@
     <Content Include="Views\web.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Sections\_TwoColumnsSection.cshtml" />
+    <Content Include="Views\Shared\InlineEditors\_TextAreaInlineEditor.cshtml" />
+    <Content Include="Views\Shared\FormComponents\_LongTextCharacterCountFormComponent.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
+    <Folder Include="Views\TwoColumns\" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\AWSSDK.S3.3.1.9.0\analyzers\dotnet\cs\AWSSDK.S3.CodeAnalysis.dll" />

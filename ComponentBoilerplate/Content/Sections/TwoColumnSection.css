@@ -1,0 +1,9 @@
+﻿.kentico-componentboilerplate-two-columns-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+    .kentico-componentboilerplate-two-columns-section > div {
+        flex-grow: 1;
+    }

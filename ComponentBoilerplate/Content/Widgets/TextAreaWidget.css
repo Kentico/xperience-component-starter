@@ -1,9 +1,10 @@
-﻿.text-area-widget {
+﻿.kentico-componentboilerplate-text-area-widget {
     background-color: silver;
-    padding: 1em;
+    padding: .5em;
+    margin: .5em;
 }
 
-.text-area-widget div.content {
+kentico-componentboilerplate-text-area-widget div.content {
     background: white;
     width: 50%;
     min-height: 50px;
