@@ -549,6 +549,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Widgets\TextAreaWidget.css" />
+    <Content Include="Content\Widgets\TextAreaWidget.js" />
     <Content Include="Global.asax" />
     <Content Include="Kentico\Content\FormComponents\USPhone\dependencyLibs\inputmask.dependencyLib.js" />
     <Content Include="Kentico\Content\FormComponents\USPhone\inputmask.js" />

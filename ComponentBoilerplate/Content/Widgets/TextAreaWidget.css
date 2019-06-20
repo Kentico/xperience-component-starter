@@ -1,0 +1,11 @@
+﻿.text-area-widget {
+    background-color: silver;
+    padding: 1em;
+}
+
+.text-area-widget div.content {
+    background: white;
+    width: 50%;
+    min-height: 50px;
+    margin: 1em;
+}
