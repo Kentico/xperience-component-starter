@@ -34,10 +34,27 @@ packages/
 
 # Ignore Nuget packages Kentico content files
 # kentico.languagepack.english
-CMSResources/*
+ComponentBoilerplate/CMSResources/*
 # kentico.aspnet.mvc
-App_Data/Global/Resources/Kentico.*
-Kentico/*
+ComponentBoilerplate/App_Data/Global/Resources/Kentico.*
+ComponentBoilerplate/Kentico/*
 
 # Web farm files
-/App_Data/CMSModules/WebFarm/*.sync
+ComponentBoilerplate/App_Data/CMSModules/WebFarm/*.sync
+
+# app config and connection string configuration
+ComponentBoilerplate/ConnectionStrings.config
+ComponentBoilerplate/AppSettings.config
+ComponentBoilerplate/web.Debug.config
+ComponentBoilerplate/web.Release.config
+
+# ignore files imported by Kentico.AspNet.MvcDevelopmentSite package
+ComponentBoilerplate/App_Start/ApplicationConfig.cs
+ComponentBoilerplate/App_Start/BundleConfig.cs
+ComponentBoilerplate/App_Start/RouteConfig.cs
+ComponentBoilerplate/Views/_ViewStart.cshtml
+ComponentBoilerplate/Views/Home/Index.cshtml
+ComponentBoilerplate/Views/Shared/_Layout.cshtml
+ComponentBoilerplate/Views/web.config
+ComponentBoilerplate/web.config
+ComponentBoilerplate/Global.asax
