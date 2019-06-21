@@ -50,3 +50,10 @@
 1. Open the administration interface, go to Pages, select the `DevelopmentPage` and you could see the **page builder set up**.
 
 ![Boilerplate showcase](/Boilerplate.png)
+
+## TODO
+
+* decide compile vs content for `Global.asax.xs` (add spike issue)
+* decide if "automatically resolve binding redirects"
+  * (set 5.2.3  Microsoft.AspNet.MVC)
+  * do not turn on automatic (no issue)

@@ -1,6 +1,6 @@
 ﻿window.developmentsite = window.developmentsite || {};
 window.developmentsite.registerTextAreaWidgetEvents = function (componentId) {
-    var button = document.querySelector('#'+componentId);
+    var button = document.querySelector('#' + componentId + ' button.btn-display-content');
     if (!button) {
         return;
     }
