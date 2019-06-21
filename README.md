@@ -66,5 +66,5 @@ The [development environment](https://github.com/Kentico/ems-mvc-component-devel
   * (set 5.2.3  Microsoft.AspNet.MVC)
   * do not turn on automatic (no issue)
 
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/ems-mvc-component-boilerplate?pixel)
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/ems-mvc-component-boilerplate?pixel)
 
