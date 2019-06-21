@@ -59,12 +59,5 @@ The [development environment](https://github.com/Kentico/ems-mvc-component-devel
 
 ![Boilerplate showcase](/Boilerplate.png)
 
-## TODO
-
-* decide compile vs content for `Global.asax.xs` (add spike issue)
-* decide if "automatically resolve binding redirects"
-  * (set 5.2.3  Microsoft.AspNet.MVC)
-  * do not turn on automatic (no issue)
-
 ![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/ems-mvc-component-boilerplate?pixel)
 
