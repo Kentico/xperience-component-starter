@@ -1,4 +1,12 @@
-# ems-mvc-component-boilerplate
+# Kentico EMS Component Boilerplate
+
+This is the boilerplate that couldd be used as a starter point todevelop widgets. It contains one sample widget, inline editor, form component, and section.
+
+The [development environment](https://github.com/Kentico/ems-mvc-component-development-site) is loaded as a nuget package.
+
+## :warning: Disclaimer
+
+> This repo is still in development. It is about to be released with the [Kentico 12 Service pack is released](https://www.kentico.com/product/roadmap).
 
 ## Get started
 
@@ -57,3 +65,6 @@
 * decide if "automatically resolve binding redirects"
   * (set 5.2.3  Microsoft.AspNet.MVC)
   * do not turn on automatic (no issue)
+
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/ems-mvc-component-boilerplate?pixel)
+
