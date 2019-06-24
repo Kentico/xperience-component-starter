@@ -6,7 +6,7 @@ The [development environment](https://github.com/Kentico/ems-mvc-component-devel
 
 ## :warning: Disclaimer
 
-> This repo is still in development. It is about to be released with the [Kentico 12 Service pack is released](https://www.kentico.com/product/roadmap).
+> This repo is still in development. It is about to be released after the [Kentico 12 Service pack is released](https://www.kentico.com/product/roadmap).
 
 ## Get started
 
