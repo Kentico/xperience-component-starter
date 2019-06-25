@@ -2,8 +2,6 @@
 
 This is the boilerplate that can be used as a starter point to develop widgets. It contains one sample widget, inline editor, form component, and section.
 
-The [development environment](https://github.com/Kentico/ems-mvc-component-development-site) is loaded as a nuget package.
-
 ## :warning: Disclaimer
 
 > This repo is still in development. It is about to be released after the [Kentico 12 Service pack is released](https://www.kentico.com/product/roadmap).
