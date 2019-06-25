@@ -51,7 +51,7 @@ See the list of the [issues that need to be solved before release](https://githu
 
 1. Build the [ComponentBoilerplate.sln](/ComponentBoilerplate.sln).
 
-1. Run command to reinstall packages (see the issue #1) and confirm rewriting all the content in Package Manager Console for the Visual Studio
+1. Run command to reinstall packages (see [the issue](https://github.com/Kentico/ems-mvc-component-boilerplate/issues/1)) in Package Manager Console for the Visual Studio and confirm rewriting all the content 
 
     ```sh
    Update-Package -reinstall
