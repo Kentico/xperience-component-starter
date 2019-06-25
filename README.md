@@ -4,7 +4,10 @@ This is the boilerplate that can be used as a starter point to develop widgets. 
 
 ## :warning: Disclaimer
 
-> This repo is still in development. It is about to be released after the [Kentico 12 Service pack is released](https://www.kentico.com/product/roadmap).
+> This repo is still in development. It is about to be released after the [Kentico 12 Service pack is released](https://www.kentico.com/product/roadmap). 
+
+Currently it is possoble to start the development, but the repository structure might change.
+See the list of the [issues that need to be solved before release](https://github.com/Kentico/ems-mvc-component-boilerplate/labels/before-release).
 
 ## Get started
 
