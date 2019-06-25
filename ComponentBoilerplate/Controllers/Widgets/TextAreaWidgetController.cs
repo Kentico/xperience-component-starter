@@ -19,6 +19,7 @@ namespace Kentico.ComponentBoilerplate.Controllers.Widgets
         public ActionResult Index()
         {
             var properies = GetProperties();
+
             return PartialView("Widgets/_TextAreaWidget", properies.Content);
         }
     }
