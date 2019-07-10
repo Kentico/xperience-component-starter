@@ -9,6 +9,12 @@ This a starter point to develop MVC Page Builder Components. It contains one sam
 Currently it is possible to start the development, but the repository structure might change.
 See the list of the [issues that need to be solved before release](https://github.com/Kentico/ems-mvc-component-boilerplate/labels/before-release).
 
+## :warning: Repository moved to another location
+> All git clone, git fetch, or git pushoperations targeting the previous location will continue to function as if made on the new location. However, to reduce confusion, we strongly recommend updating any existing local clones to point to the new repository URL. You can do this by using git remote on the command line:
+
+```sh
+$ git remote set-url origin https://github.com/Kentico/ems-mvc-component-starter.git
+```
 ## Get started
 
 1. **Download Kentico installation**
@@ -65,7 +71,7 @@ See the list of the [issues that need to be solved before release](https://githu
 
 1. Open the administration interface, go to Pages, select the `DevelopmentPage` and you could see the **page builder set up**.
 
-![Boilerplate showcase](/Boilerplate.png)
+![Boilerplate showcase](/Starter.png)
 
 ![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/ems-mvc-component-boilerplate?pixel)
 
