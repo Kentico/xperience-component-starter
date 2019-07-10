@@ -1,6 +1,6 @@
-# Kentico EMS Component Boilerplate
+# Kentico EMS Component Starter
 
-This is the boilerplate that can be used as a starter point to develop widgets. It contains one sample widget, inline editor, form component, and section.
+This a starter point to develop MVC Page Builder Components. It contains one sample widget, inline editor, form component, and section.
 
 ## :warning: Disclaimer
 
