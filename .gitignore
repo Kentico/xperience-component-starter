@@ -29,19 +29,32 @@ Thumbs.db
 # Visual Studio cache/options directory
 .vs/
 
+# Ignore Administration Kentico site
+CMS/
+Lib/
+GlobalAssemblyInfo.cs
+WebApp.sln
+
 # Ignore nuget packages
 packages/
 
 # Ignore Nuget packages Kentico content files
 # kentico.languagepack.english
-ComponentBoilerplate/CMSResources/*
+DevelopmentSite/CMSResources/*
 # kentico.aspnet.mvc
-ComponentBoilerplate/App_Data/Global/Resources/Kentico.*
-ComponentBoilerplate/Kentico/*
+DevelopmentSite/App_Data/Global/Resources/Kentico.*
 
 # Web farm files
-ComponentBoilerplate/App_Data/CMSModules/WebFarm/*.sync
+/DevelopmentSite/App_Data/CMSModules/WebFarm/*.sync
 
-# app config and connection string configuration
-ComponentBoilerplate/ConnectionStrings.config
-ComponentBoilerplate/AppSettings.config
+# Actual config files
+/DevelopmentSite/AppSettings.config
+/DevelopmentSite/ConnectionStrings.config
+
+# Ignore nuild nuget packages
+/DevelopmentSite/*.nupkg
+
+# build artifacts
+/artifacts
+
+node_modules/

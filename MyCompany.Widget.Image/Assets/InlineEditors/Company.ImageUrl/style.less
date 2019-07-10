@@ -1,0 +1,37 @@
+@button-color: #497d04;
+@button-hover-color: #355e00;
+
+.cmp-image-url {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    form {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid grey;
+        padding: 2px;
+
+        input {
+            flex-grow: 2;
+            border: none;
+            width: 370px;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        button {
+            border: 1px solid @button-color;
+            background-color: @button-color;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            border-color: @button-hover-color;
+            background-color: @button-hover-color;
+        }
+    }
+}
