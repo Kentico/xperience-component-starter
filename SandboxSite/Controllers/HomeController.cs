@@ -22,7 +22,7 @@ namespace Kentico.AspNet.Mvc.SandboxSite
 
             TreeNode page = DocumentHelper
                 .GetDocuments()
-                .Path("/Development-Page")
+                .Path("/Home")
                 .OnCurrentSite()
                 .TopN(1)
                 .FirstOrDefault();
