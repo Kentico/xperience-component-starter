@@ -2,7 +2,7 @@
 
 import "./style.less";
 
-window.kentico.pageBuilder.registerInlineEditor("Company.InlineEditor.ImageUrl", {
+window.kentico.pageBuilder.registerInlineEditor("MyCompany.InlineEditor.ImageUrl", {
     init(options) {
         const editor = options.editor;
         const input = editor.querySelector("input");
@@ -11,7 +11,7 @@ window.kentico.pageBuilder.registerInlineEditor("Company.InlineEditor.ImageUrl",
         if (button != null && input != null) {
             button.addEventListener("click", (e) => {
                 e.preventDefault();
-                var event = new CustomEvent("updateProperty", {
+                const event = new CustomEvent("updateProperty", {
                     detail: {
                         value: input.value,
                         name: options.propertyName

@@ -528,7 +528,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Assets\Sections\Company.TwoColumns\main.less" />
+    <None Include="Assets\Sections\MyCompany.TwoColumns\main.less" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

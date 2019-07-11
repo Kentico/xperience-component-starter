@@ -10,10 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "debounce": "^1.2.0"
+    "debounce": "^1.2.0",
+    "lodash.merge": "^4.6.2"
   },
   "devDependencies": {
     "@types/debounce": "^1.2.0",
+    "@types/lodash.merge": "^4.6.6",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.0.0",
     "glob": "^7.1.4",

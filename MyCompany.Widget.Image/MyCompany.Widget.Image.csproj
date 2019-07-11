@@ -536,13 +536,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Assets\InlineEditors\Company.ImageUrl\style.less" />
+    <None Include="Assets\InlineEditors\MyCompany.ImageUrl\style.less" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\FormComponents\Company.ImageUrlWithPreview\style.less" />
-    <TypeScriptCompile Include="Assets\FormComponents\Company.ImageUrlWithPreview\main.ts" />
-    <TypeScriptCompile Include="Assets\InlineEditors\Company.ImageUrl\main.ts" />
+    <None Include="Assets\FormComponents\MyCompany.ImageUrlWithPreview\style.less" />
+    <TypeScriptCompile Include="Assets\FormComponents\MyCompany.ImageUrlWithPreview\main.ts" />
+    <TypeScriptCompile Include="Assets\InlineEditors\MyCompany.ImageUrl\main.ts" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App_Data\Global\Resources\MyCompany.Widget.Image.resx">

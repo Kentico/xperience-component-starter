@@ -1,11 +1,9 @@
-import { PageBuilder } from "./builder";
-import { Company } from "./company";
+import { Kentico } from "./kentico";
+import { MyCompany } from "./company";
 
 declare global {
   interface Window {
-    kentico: {
-      pageBuilder: PageBuilder
-    },
-    Company: Company,
+    kentico: Kentico,
+    MyCompany: MyCompany,
   }
 }

@@ -40,19 +40,24 @@ packages/
 
 # Ignore Nuget packages Kentico content files
 # kentico.languagepack.english
-DevelopmentSite/CMSResources/*
+MyCompany.*/CMSResources/*
+SandboxSite/CMSResources/*
 # kentico.aspnet.mvc
-DevelopmentSite/App_Data/Global/Resources/Kentico.*
+SandboxSite/App_Data/Global/Resources/Kentico.*
+
+# Ignore component development files
+SandboxSite/App_Data/Global/Resources/MyCompany.*
+SandboxSite/Content/*
 
 # Web farm files
-/DevelopmentSite/App_Data/CMSModules/WebFarm/*.sync
+/SandboxSite/App_Data/CMSModules/WebFarm/*.sync
 
 # Actual config files
-/DevelopmentSite/AppSettings.config
-/DevelopmentSite/ConnectionStrings.config
+/SandboxSite/AppSettings.config
+/SandboxSite/ConnectionStrings.config
 
 # Ignore nuild nuget packages
-/DevelopmentSite/*.nupkg
+/SandboxSite/*.nupkg
 
 # build artifacts
 /artifacts

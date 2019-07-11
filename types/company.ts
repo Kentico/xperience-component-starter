@@ -1,5 +1,3 @@
-import { debounce } from "debounce";
-
 export interface ImageUrlOptions {
     readonly identifier: string;
     readonly controlClassName: string;
@@ -8,7 +6,7 @@ export interface ImageUrlOptions {
     readonly placeholderImageUri: string;
 }
 
-interface ImageUrlWithPreview {
+export interface ImageUrlWithPreview {
     readonly init: (options: ImageUrlOptions) => void;
 }
 
@@ -16,8 +14,6 @@ interface FormComponents {
     readonly imageUrlWithPreview: ImageUrlWithPreview;
 }
 
-export interface Company {
+export interface MyCompany {
     readonly formComponents: FormComponents;
-    readonly debounce: typeof debounce;
-    readonly isUrlImage: (url: string) => Promise<boolean>;
 }
