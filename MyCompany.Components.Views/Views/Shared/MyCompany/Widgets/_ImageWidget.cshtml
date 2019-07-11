@@ -1,0 +1,14 @@
+﻿@using Kentico.PageBuilder.Web.Mvc
+
+@model MyCompany.Components.Models.ImageWidgetViewModel
+@{ 
+    var imageUrl = string.IsNullOrWhiteSpace(Model.ImageUrl) ? Model.PlaceholderUrl : Model.ImageUrl;
+}
+
+<div>
+    <img src="@imageUrl" />
+    @if (Context.Kentico().PageBuilder().EditMode)
+    {
+        Html.RenderPartial("~/Views/Shared/MyCompany/InlineEditors/_ImageUrl.cshtml", Model);
+    }
+</div>

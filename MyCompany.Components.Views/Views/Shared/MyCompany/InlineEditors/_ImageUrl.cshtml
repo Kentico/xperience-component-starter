@@ -1,0 +1,13 @@
+﻿@using Kentico.PageBuilder.Web.Mvc
+
+@model MyCompany.Components.Models.ImageWidgetViewModel
+
+@using (Html.Kentico().BeginInlineEditor("MyCompany.InlineEditor.ImageUrl", nameof(Model.ImageUrl)))
+{
+    <div class="cmp-image-url">
+        <form>
+            <input type="search" name="imageUrl" value="@Model.ImageUrl" placeholder="Insert image URL" />
+            <button class="cmp-image-url-apply">🗸</button>
+        </form>
+    </div>
+}
