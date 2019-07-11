@@ -11,6 +11,7 @@ namespace Kentico.AspNet.Mvc.SandboxSite
             // Enable required Kentico features
             builder.UsePreview();
             builder.UsePageBuilder();
+            builder.UseResourceSharingWithAdministration();
         }
     }
 }
