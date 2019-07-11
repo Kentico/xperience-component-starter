@@ -1,4 +1,4 @@
-import _merge from "lodash.merge";
+import _merge from "lodash/merge";
 
 /**
  * Regular expression representing an URL.

@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "debounce": "^1.2.0",
-    "lodash.merge": "^4.6.2"
+    "lodash": "^4.17.14"
   },
   "devDependencies": {
     "@types/debounce": "^1.2.0",
