@@ -1,5 +1,5 @@
 import { Kentico } from "./kentico";
-import { MyCompany } from "./company";
+import { MyCompany } from "./mycompany";
 
 declare global {
   interface Window {

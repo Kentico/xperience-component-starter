@@ -49,8 +49,9 @@ SandboxSite/App_Data/Global/Resources/Kentico.*
 SandboxSite/App_Data/Global/Resources/MyCompany.*
 SandboxSite/Content/*
 
-# Web farm files
+# Kentico application data files
 /SandboxSite/App_Data/CMSModules/WebFarm/*.sync
+/SandboxSite/App_Data/CMSModules/SmartSearch
 
 # Actual config files
 /SandboxSite/AppSettings.config
@@ -61,5 +62,8 @@ SandboxSite/Content/*
 
 # build artifacts
 /artifacts
+
+# Webpack outputs
+MyCompany.Components/Content
 
 node_modules/
