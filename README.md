@@ -1,5 +1,5 @@
 # Kentico EMS Component Starter
-[![Build status](https://ci.appveyor.com/api/projects/status/st73cvjh2vr7r0ck?svg=true)](https://ci.appveyor.com/project/kentico/ems-mvc-component-starter)
+[![Build status](https://ci.appveyor.com/api/projects/status/st73cvjh2vr7r0ck?svg=true)](https://ci.appveyor.com/project/kentico/ems-mvc-component-starter/branch/master)
 
 This a starter point to develop MVC Page Builder Components. It contains one sample widget, inline editor, form component, and section.
 
