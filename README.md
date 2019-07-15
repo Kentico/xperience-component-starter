@@ -59,7 +59,7 @@ $ git remote set-url origin https://github.com/Kentico/ems-mvc-component-starter
     ```sh
     npm install
     ```
-1. Use DEV server for serving transpiled JavaScript files
+1. After installing npm packages start DEV server for serving transpiled JavaScript files
     ```sh
     npm run dev
     ```
