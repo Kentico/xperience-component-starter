@@ -69,6 +69,6 @@ $ git remote set-url origin https://github.com/Kentico/ems-mvc-component-starter
 
 1. Open the administration interface, go to Pages, select the `Home` and you could see the **page builder set up**.
 
-![Boilerplate showcase](/Starter.png)
+![Starter showcase](/Starter.png)
 
 ![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/ems-mvc-component-boilerplate?pixel)
