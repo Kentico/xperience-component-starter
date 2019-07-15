@@ -45,7 +45,7 @@ $ git remote set-url origin https://github.com/Kentico/ems-mvc-component-starter
 1. **Clone this repository** to the different folder than the Kentico administration is installed
 
     ```sh
-    git clone https://github.com/Kentico/ems-mvc-component-boilerplate
+    git clone https://github.com/Kentico/ems-mvc-component-starter
     ```
 
 1. Rename [AppSettings.config.template](/SandboxSite/AppSettings.config.template) to `AppSettings.config` and put the **hash string salt** (`CMSHashStringSalt`) there from Kentico administration application `web.config` application settings.
