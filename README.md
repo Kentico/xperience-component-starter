@@ -48,9 +48,9 @@ $ git remote set-url origin https://github.com/Kentico/ems-mvc-component-starter
     git clone https://github.com/Kentico/ems-mvc-component-starter
     ```
 
-1. Rename [AppSettings.config.template](/SandboxSite/AppSettings.config.template) to `AppSettings.config` and put the **hash string salt** (`CMSHashStringSalt`) there from Kentico administration application `web.config` application settings.
+1. Rename [`AppSettings.config.template`](/SandboxSite/AppSettings.config.template) to `AppSettings.config` and put the **hash string salt** (`CMSHashStringSalt`) there from Kentico administration application `web.config` application settings.
 
-1. Rename [ConnectionStrings.config.template](/SandboxSite/ConnectionStrings.config.template) to `ConnectionStrings.config` and put the **connection string** (`CMSConnectionString`) there from Kentico administration application `web.config` connection strings.
+1. Rename [`ConnectionStrings.config.template`](/SandboxSite/ConnectionStrings.config.template) to `ConnectionStrings.config` and put the **connection string** (`CMSConnectionString`) there from Kentico administration application `web.config` connection strings.
 
 1. Build the [`MVCComponentStarter.sln`](/MVCComponentStarter.sln).
 
