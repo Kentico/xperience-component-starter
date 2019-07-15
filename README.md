@@ -26,7 +26,7 @@ $ git remote set-url origin https://github.com/Kentico/ems-mvc-component-starter
         * If you wish to adjust the connection to the different database server, [adjust the `SQL` tag in the configuration XML](https://docs.kentico.com/k12sp/installation/installing-kentico-from-the-command-line/command-line-installation-xml-configuration#Commandlineinstallation-XMLconfiguration-SQL)
         * If you wish to add your license to the instance, [adjust the `Licenses` tag in the configuration XML](https://docs.kentico.com/k12sp/installation/installing-kentico-from-the-command-line/command-line-installation-xml-configuration#Commandlineinstallation-XMLconfiguration-Licenses)
 
-      > If you get an error about already installed program files run command for uninstalling the current program files and then run the previous command again
+    * > If you get an error about already installed program files run command for uninstalling the current program files and then run the previous command again
 
       ```sh
       .\Kentico_12_0_trial.exe /u
@@ -34,7 +34,7 @@ $ git remote set-url origin https://github.com/Kentico/ems-mvc-component-starter
 
 1. **Apply the latest [hotfix](https://devnet.kentico.com/download/hotfixes)** (or at least 12.0.29)
 
-1. Run the administration instance (already registered in IIS with `_Admin` suffix) **and import [the site export package](/SandboxSite.zip)** according to the ([documentation](https://docs.kentico.com/K12SP/Importing+a+site+or+objects))
+1. Run the administration instance (already registered in IIS with `_Admin` suffix) **and import [the site export package](/SandboxSite.zip)** according to the [documentation](https://docs.kentico.com/K12SP/Importing+a+site+or+objects)
     * This package contains
         * Site (With `Presentation URL`)
         * Page type (configured for page builder - url pattern `/` and use tab  checkbox)
