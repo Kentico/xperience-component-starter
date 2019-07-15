@@ -48,19 +48,15 @@ $ git remote set-url origin https://github.com/Kentico/ems-mvc-component-starter
     git clone https://github.com/Kentico/ems-mvc-component-boilerplate
     ```
 
-1. Set the **hash string salt** (`CMSHashStringSalt`) in the [web.config](/ComponentBoilerplate/web.config) file from Kentico administration application web.config application settings.
+1. Rename [AppSettings.config.template](/SandboxSite/AppSettings.config.template) to `AppSettings.config` and put the **hash string salt** (`CMSHashStringSalt`) there from Kentico administration application `web.config` application settings.
 
-1. Set the **the connection string** (`CMSConnectionString`) in the [web.config](/ComponentBoilerplate/web.config) file from Kentico administration application `web.config` connection strings.
+1. Rename [ConnectionStrings.config.template](/SandboxSite/ConnectionStrings.config.template) to `ConnectionStrings.config` and put the **connection string** (`CMSConnectionString`) there from Kentico administration application `web.config` connection strings.
 
 1. Build the [MVCComponentStarter.sln](/MVCComponentStarter.sln).
 
-1. Register the site in IIS (It is also possible to use IIS express)
-    * use `<TargetFolder>/ComponentBoilerplate` as a `Physical path`
-    * you could use the same Application pool as is set f administration application
+1. Run this application using IIS express
 
-1. Adjust **presentation URL** in the administration instance according to the registration from the previous step
-
-1. Open the administration interface, go to Pages, select the `DevelopmentPage` and you could see the **page builder set up**.
+1. Open the administration interface, go to Pages, select the `Home` and you could see the **page builder set up**.
 
 ![Boilerplate showcase](/Starter.png)
 
