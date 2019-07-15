@@ -54,6 +54,17 @@ $ git remote set-url origin https://github.com/Kentico/ems-mvc-component-starter
 
 1. Build the [MVCComponentStarter.sln](/MVCComponentStarter.sln).
 
+1. Download and install latest [NodeJS runtime](https://nodejs.org/en/)
+
+1. Navigate to root of this project using console and install missing npm packages
+    ```sh
+    npm install
+    ```
+1. Use DEV server for serving transpiled JavaScript files
+    ```sh
+    npm run dev
+    ```
+
 1. Run this application using IIS express
 
 1. Open the administration interface, go to Pages, select the `Home` and you could see the **page builder set up**.
