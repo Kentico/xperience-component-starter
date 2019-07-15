@@ -20,7 +20,7 @@ $ git remote set-url origin https://github.com/Kentico/ems-mvc-component-starter
 1. **Install Kentico** using [the command line](https://docs.kentico.com/k12sp/installation/installing-kentico-from-the-command-line/command-line-installation-xml-configuration#Commandlineinstallation-XMLconfiguration-SQL).
     * Use [Kentico installation profile](/KenticoInstallationProfile.xml) template and define `TargetFolder` attribute of th `IIS` tag (:warning: Do not use the same location as the one you have you exe file located)
         * This will install Kentico Administration interface without any site
-        * If you wish to adjust the connection to the different database server, [adjust the `SQL` tag in the configuration](https://docs.kentico.com/k12sp/installation/installing-kentico-from-the-command-line/command-line-installation-xml-configuration#Commandlineinstallation-XMLconfiguration-SQL)
+        * If you wish to adjust the connection to the different database server, [adjust the `SQL` tag in the configuration XML](https://docs.kentico.com/k12sp/installation/installing-kentico-from-the-command-line/command-line-installation-xml-configuration#Commandlineinstallation-XMLconfiguration-SQL)
         * If you wish to add your license to the instance, [adjust the `Licenses` tag in the configuration XML](https://docs.kentico.com/k12sp/installation/installing-kentico-from-the-command-line/command-line-installation-xml-configuration#Commandlineinstallation-XMLconfiguration-Licenses)
 
       ```sh
