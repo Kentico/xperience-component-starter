@@ -26,7 +26,7 @@ $ git remote set-url origin https://github.com/Kentico/ems-mvc-component-starter
         * If you wish to adjust the connection to the different database server, [adjust the `SQL` tag in the configuration XML](https://docs.kentico.com/k12sp/installation/installing-kentico-from-the-command-line/command-line-installation-xml-configuration#Commandlineinstallation-XMLconfiguration-SQL)
         * If you wish to add your license to the instance, [adjust the `Licenses` tag in the configuration XML](https://docs.kentico.com/k12sp/installation/installing-kentico-from-the-command-line/command-line-installation-xml-configuration#Commandlineinstallation-XMLconfiguration-Licenses)
 
-    * > If you get an error about already installed program files run command for uninstalling the current program files and then run the previous command again
+    * If you get an error about already installed program files run command for uninstalling the current program files and then run the previous command again
 
       ```sh
       .\Kentico_12_0_trial.exe /u
