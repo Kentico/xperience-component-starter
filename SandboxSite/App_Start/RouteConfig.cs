@@ -25,7 +25,7 @@ namespace Kentico.AspNet.Mvc.SandboxSite
                 name: "Default",
                 url: "{controller}/{action}",
                 defaults: new { controller = "Home", action = "Index" }
-);
+            );
         }
     }
 }

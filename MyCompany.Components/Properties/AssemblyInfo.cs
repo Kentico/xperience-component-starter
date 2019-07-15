@@ -9,11 +9,11 @@ using CMS;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MyCompany.Widget.Image")]
+[assembly: AssemblyTitle("MyCompany.Components")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MyCompany.Widget.Image")]
+[assembly: AssemblyProduct("MyCompany.Components")]
 [assembly: AssemblyCopyright("MyCopyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

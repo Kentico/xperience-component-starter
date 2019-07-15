@@ -15,17 +15,5 @@
         /// Image URL.
         /// </summary>
         public string ImageUrl { get; set; }
-
-
-        /// <summary>
-        /// Image width.
-        /// </summary>
-        public int Width { get; set; }
-
-
-        /// <summary>
-        /// Image height.
-        /// </summary>
-        public int Height { get; set; }
     }
 }

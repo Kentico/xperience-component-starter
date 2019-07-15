@@ -1,10 +1,13 @@
 ﻿using Kentico.Forms.Web.Mvc;
 using MyCompany.Components.Models;
 
-[assembly: RegisterFormComponent(ImageUrlWithPreviewComponent.IDENTIFIER, typeof(ImageUrlWithPreviewComponent), "{$MyCompany.FormComponents.ImageUrlWithPreview.Name$}", Description = "{$MyCompany.FormComponents.ImageUrlWithPreview.Description$}", IconClass = "icon-l-text", IsAvailableInFormBuilderEditor = false, ViewName = "~/Views/Shared/MyCompany/FormComponents/_ImageUrlWithPreview.cshtml")]
+[assembly: RegisterFormComponent(ImageUrlWithPreviewComponent.IDENTIFIER, typeof(ImageUrlWithPreviewComponent), "{$MyCompany.FormComponent.ImageUrlWithPreview.Name$}", IsAvailableInFormBuilderEditor = false, ViewName = "~/Views/Shared/MyCompany/FormComponents/_ImageUrlWithPreview.cshtml")]
 
 namespace MyCompany.Components.Models
 {
+    /// <summary>
+    /// Image URL with preview form component.
+    /// </summary>
     public class ImageUrlWithPreviewComponent : FormComponent<ImageUrlWithPreviewProperties, string>
     {
         /// <summary>
@@ -26,12 +29,18 @@ namespace MyCompany.Components.Models
         public string Url { get; set; }
 
 
+        /// <summary>
+        /// Gets the value of the form component.
+        /// </summary>
         public override string GetValue()
         {
             return Url;
         }
 
 
+        /// <summary>
+        /// Sets the value of the form component.
+        /// </summary>
         public override void SetValue(string value)
         {
             Url = value;

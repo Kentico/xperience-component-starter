@@ -1,6 +1,6 @@
 ﻿import { debounce } from "debounce";
 
-import { ImageUrlOptions, ImageUrlWithPreview } from "@/types/mycompany";
+import { ImageUrlOptions, ImageUrlWithPreview } from "@/types/my-company";
 import { isUrlImage, exposeFormComponent } from "./helpers";
 import "./style.less";
 

@@ -10,8 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "debounce": "^1.2.0",
-    "lodash": "^4.17.14"
+    "debounce": "^1.2.0"
   },
   "devDependencies": {
     "@types/debounce": "^1.2.0",

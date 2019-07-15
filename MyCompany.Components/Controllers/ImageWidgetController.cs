@@ -10,11 +10,10 @@ using MyCompany.Components.Models;
 namespace MyCompany.Components.Controllers
 {
     /// <summary>
-    /// Controller for image widgets.
+    /// Controller for the image widget.
     /// </summary>
     public class ImageWidgetController : WidgetController<ImageWidgetProperties>
     {
-        // GET: ImageWidget
         public ActionResult Index()
         {
             var properties = GetProperties();

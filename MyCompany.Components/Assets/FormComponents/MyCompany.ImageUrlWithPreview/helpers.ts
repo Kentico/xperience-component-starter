@@ -1,4 +1,4 @@
-import _merge from "lodash/merge";
+import { MyCompany } from "@/types/my-company";
 
 /**
  * Regular expression representing an URL.
@@ -48,13 +48,14 @@ export const isUrlImage = (url: string): Promise<boolean> => {
  * @param api API object to expose.
  */
 export const exposeFormComponent = (name: string, api: object) => {
-    window.MyCompany = window.MyCompany || {} as any;
-    
-    _merge(window.MyCompany, {
-        formComponents: {
-            [name]: {
-                ...api,
-            }
+    const mutableWindow: Mutable<Window> = window as any;
+    const myCompany: Mutable<MyCompany> = mutableWindow.myCompany = mutableWindow.myCompany || {} as any;
+    myCompany.formComponents = myCompany.formComponents || {} as any;
+
+    myCompany.formComponents = {
+        ...myCompany.formComponents,
+        [name]: {
+            ...api,
         }
-    })
+    }
 }

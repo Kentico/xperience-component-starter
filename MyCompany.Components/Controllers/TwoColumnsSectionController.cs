@@ -7,14 +7,14 @@ using MyCompany.Components.Controllers;
 
 namespace MyCompany.Components.Controllers
 {
+    /// <summary>
+    /// Controller for the two-column section.
+    /// </summary>
     public class TwoColumnsSectionController : SectionController
     {
-        // GET: TwoColumnsSection
         public ActionResult Index()
         {
             return PartialView("~/Views/Shared/MyCompany/Sections/_TwoColumnsSection.cshtml");
         }
     }
 }
-
-

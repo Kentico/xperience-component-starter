@@ -1,8 +1,8 @@
 const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
-const helpers = require("./build/helpers");
-const webpackConfig = require("./build/config");
+const helpers = require("./webpack/helpers");
+const webpackConfig = require("./webpack/config");
 
 module.exports = (env, options) => {
   const isProduction = options.mode === "production";
