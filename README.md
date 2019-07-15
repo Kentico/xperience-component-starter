@@ -52,7 +52,7 @@ $ git remote set-url origin https://github.com/Kentico/ems-mvc-component-starter
 
 1. Rename [ConnectionStrings.config.template](/SandboxSite/ConnectionStrings.config.template) to `ConnectionStrings.config` and put the **connection string** (`CMSConnectionString`) there from Kentico administration application `web.config` connection strings.
 
-1. Build the [MVCComponentStarter.sln](/MVCComponentStarter.sln).
+1. Build the [`MVCComponentStarter.sln`](/MVCComponentStarter.sln).
 
 1. Download and install latest [NodeJS runtime](https://nodejs.org/en/)
 
