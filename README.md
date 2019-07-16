@@ -3,10 +3,6 @@
 
 This is a starter point to develop MVC Page Builder Components. It contains one sample widget, inline editor, form component and section.
 
-## :warning: This repo is still in development
-
-> Currently it is possible to start the development, but the repository structure might change.
-
 ## Get started
 
 1. **Download Kentico installation**
