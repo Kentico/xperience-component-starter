@@ -1,18 +1,12 @@
 # Kentico EMS Component Starter
 [![Build status](https://ci.appveyor.com/api/projects/status/st73cvjh2vr7r0ck?svg=true)](https://ci.appveyor.com/project/kentico/ems-mvc-component-starter/branch/master)
 
-This is a starter point to develop MVC Page Builder Components. It contains one sample widget, inline editor, form component, and section.
+This is a starter point to develop MVC Page Builder Components. It contains one sample widget, inline editor, form component and section.
 
 ## :warning: This repo is still in development
 
 > Currently it is possible to start the development, but the repository structure might change.
 
-## :warning: Repository moved to another location
-> All git clone, git fetch, or git push operations targeting the previous location will continue to function as if made on the new location. However, to reduce confusion, we strongly recommend updating any existing local clones to point to the new repository URL. You can do this by using git remote on the command line:
-
-```sh
-$ git remote set-url origin https://github.com/Kentico/ems-mvc-component-starter.git
-```
 ## Get started
 
 1. **Download Kentico installation**
@@ -64,7 +58,7 @@ $ git remote set-url origin https://github.com/Kentico/ems-mvc-component-starter
     npm run dev
     ```
 
-1. Run this application using IIS express
+1. Press F5 in Visual Studio to start application using IIS express
 
 1. Open the administration interface, go to Pages, select the `Home` and you could see the **page builder set up**.
 
