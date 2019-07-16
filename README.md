@@ -3,12 +3,19 @@
 
 This is a starter point to develop MVC Page Builder Components. It contains one sample widget, inline editor, form component and section.
 
+## Components development best practices
+* [Widgets](https://docs.kentico.com/k12sp/developing-websites/page-builder-development/developing-widgets-in-mvc)
+* [Sections](https://docs.kentico.com/k12sp/developing-websites/page-builder-development/developing-page-builder-sections)
+* [Form components](https://docs.kentico.com/k12sp/developing-websites/form-builder-development/developing-form-components)
+* [Inline editors](https://docs.kentico.com/k12sp/developing-websites/page-builder-development/developing-widgets-in-mvc/creating-inline-editors-for-widget-properties)
+* [Personalization condition types](https://docs.kentico.com/k12sp/on-line-marketing-features/configuring-and-customizing-your-on-line-marketing-features/content-personalization-on-mvc-sites/developing-personalization-condition-types)
+
 ## Get started
 
 1. **Download Kentico installation**
     * [`Kentico_12_0_trial.exe` Trial](https://www.kentico.com/download-demo/trial-version)
 1. **Install Kentico** using [the command line](https://docs.kentico.com/k12sp/installation/installing-kentico-from-the-command-line/command-line-installation-xml-configuration#Commandlineinstallation-XMLconfiguration-SQL).
-    * Use [Kentico installation profile](/KenticoInstallationProfile.xml) template and define `TargetFolder` attribute of th `IIS` tag (:warning: Do not use the same location as the one you have you exe file located)
+    * Use [Kentico installation profile](/KenticoInstallationProfile.xml) template and define `TargetFolder` attribute of the `IIS` tag (:warning: Do not use the same location as the one you have you exe file located)
       ```sh
       .\Kentico_12_0_trial.exe KenticoInstallationProfile.xml
       ```
