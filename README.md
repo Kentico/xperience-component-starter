@@ -67,4 +67,5 @@ This is a starter point to develop MVC Page Builder Components. It contains one 
 
 ![Starter showcase](/Starter.png)
 
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/ems-mvc-component-boilerplate?pixel)
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/ems-mvc-component-starter
+?pixel)
