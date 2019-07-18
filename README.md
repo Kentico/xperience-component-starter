@@ -13,6 +13,7 @@ To learn about best practices and development of [MVC page builder](https://kent
 
 ## Getting started
 
+### Installing the Kentico administration interface
 1. Download a [Kentico installer](https://www.kentico.com/download-demo/trial-version), if you do not have one already.
 1. To install Kentico administration interface without any site from the [command line](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=installation_cmd):
     * Run the installer and use the [`KenticoInstallationProfile.xml`](/KenticoInstallationProfile.xml) [XML configuration](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=cmd_install_xml).
@@ -37,7 +38,8 @@ To learn about best practices and development of [MVC page builder](https://kent
          * Page of this page type
      * *Web farm mode* set to *Automatic*
 
-1. Clone this repository (MVC application) to a different folder than the Kentico administration interface
+### Setting up the MVC application
+1. Clone this repository (MVC application) to a different folder than the Kentico administration interface.
 
     ```sh
     git clone https://github.com/Kentico/ems-mvc-component-starter
@@ -62,11 +64,12 @@ To learn about best practices and development of [MVC page builder](https://kent
 
 1. In Visual Studio, press the F5 key to start the MVC application using IIS express.
 
-1. Open the administration interface in your preferred browser.
-      1. Navigate to the *Pages* application.
-      1. Select page named `Home` in the content tree.
+The page builder is now set up and ready to be used. To navigate to a page with the page builder:
+   1. Open the administration interface in your preferred browser.
+   1. Navigate to the *Pages* application.
+   1. Select the page named `Home` in the content tree.
 
-You can now see the [page builder interface](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=page_builder_mvc) set up and ready to be used.
+You can now see the [page builder interface](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=widgets_using_mvc) set up and ready to be used. You can [develop](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=page_builder_mvc) further components by following the links from the list at the top of the page.
 
 ![Starter showcase](/Starter.png)
 
