@@ -4,7 +4,7 @@
 This repository helps you to get started with the development of [MVC page builder](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=page_builder_mvc) components. It contains an MVC application with a sample widget, inline editor, form component, and section. The MVC application needs to be connected to an instance of the [Kentico](https://www.kentico.com/product/overview) administration application to work properly.
 
 ## Component development best practices
-To learn about best practices and developmentguidelines for [MVC page builder](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=page_builder_mvc) components, visit respective pages in the Kentico Documentation:
+To learn about best practices and development guidelines for [MVC page builder](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=page_builder_mvc) components, visit respective pages in the Kentico Documentation:
 * [Widgets](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=widgets_developing_mvc)
 * [Sections](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=page_builder_sections_mvc)
 * [Form components](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=formbuilder_components_mvc)
@@ -24,7 +24,7 @@ To learn about best practices and developmentguidelines for [MVC page builder](h
          .\Kentico_12_0_trial.exe KenticoInstallationProfile.xml
          ```
 
-    * If the installer notifies you that there are program files already installed in your system, run the following command to uninstall current Kentico program files and then run the previous installation command again.
+    * If the installer notifies you that there are program files already installed in your system, run the following command to uninstall current Kentico program files and then rerun the previous installation command.
 
       ```sh
       .\Kentico_12_0_trial.exe /u
@@ -53,7 +53,7 @@ To learn about best practices and developmentguidelines for [MVC page builder](h
 
 1. Download and install the latest [NodeJS runtime](https://nodejs.org/en/).
 
-1. Navigate to root of this MVC project using console and install missing npm packages:
+1. Navigate to the root of this MVC project using console and install missing npm packages:
     ```sh
     npm install
     ```
