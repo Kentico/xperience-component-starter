@@ -1,10 +1,10 @@
 # Kentico EMS Component Starter
 [![Build status](https://ci.appveyor.com/api/projects/status/st73cvjh2vr7r0ck?svg=true)](https://ci.appveyor.com/project/kentico/ems-mvc-component-starter/branch/master)
 
-This repository helps you to get started with development of [MVC page builder](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=page_builder_mvc) components. It contains a MVC application with sample widget, inline editor, form component, and section.
+This repository helps you to get started with the development of [MVC page builder](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=page_builder_mvc) components. It contains an MVC application with a sample widget, inline editor, form component, and section. The MVC application needs to be connected to an instance of the [Kentico](https://www.kentico.com/product/overview) administration application to work properly.
 
 ## Component development best practices
-To learn about best practices and development of [MVC page builder](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=page_builder_mvc) components, visit respective page in the Kentico Documentation:
+To learn about best practices and developmentguidelines for [MVC page builder](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=page_builder_mvc) components, visit respective pages in the Kentico Documentation:
 * [Widgets](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=widgets_developing_mvc)
 * [Sections](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=page_builder_sections_mvc)
 * [Form components](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=formbuilder_components_mvc)
@@ -14,28 +14,28 @@ To learn about best practices and development of [MVC page builder](https://kent
 ## Getting started
 
 ### Installing the Kentico administration interface
-1. Download a [Kentico installer](https://www.kentico.com/download-demo/trial-version), if you do not have one already.
-1. To install Kentico administration interface without any site from the [command line](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=installation_cmd):
+1. Download the [Kentico installer](https://www.kentico.com/download-demo/trial-version), if you do not have one already.
+1. To install the Kentico administration application without any site from the [command line](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=installation_cmd):
     * Run the installer and use the [`KenticoInstallationProfile.xml`](/KenticoInstallationProfile.xml) [XML configuration](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=cmd_install_xml).
-        * Specify the location where Kentico is installed by defining the `TargetFolder` attribute of the `IIS` tag. (:warning: Do not use the location where your intaller `.exe` file is located)
-        * To modify the connection to a different database server, configure the `SQL` tag in the [configuration XML file](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=cmd_install_xml).
-        * To add a license to the Kentico instance, adjust the `Licenses` tag in the [configuration XML file](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=cmd_install_xml).
+        * Specify the location where Kentico is installed by defining the `TargetFolder` attribute of the `IIS` element. (:warning: Do not use the location where your installer `.exe` file is located)
+        * To modify the connection to a different database server, configure the `SQL` element in the [configuration XML file](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=cmd_install_xml).
+        * To add a license to the Kentico instance, adjust the `Licenses` element in the [configuration XML file](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=cmd_install_xml).
          ```sh
          .\Kentico_12_0_trial.exe KenticoInstallationProfile.xml
          ```
 
-    * If you get an error about already installed program files, run the following command to uninstall current Kentico program files and then run the previous command again.
+    * If the installer notifies you that there are program files already installed in your system, run the following command to uninstall current Kentico program files and then run the previous installation command again.
 
       ```sh
       .\Kentico_12_0_trial.exe /u
       ```
 
-1. Apply the latest [hotfix](https://devnet.kentico.com/download/hotfixes).
+1. [Apply](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=upg_hotfix) the latest [hotfix](https://devnet.kentico.com/download/hotfixes).
 
 1. Open the administration interface (already registered in IIS with `_Admin` suffix) in your preferred browser and [import the site export package](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=site_objects_importing) ([`SandboxSite.zip`](/SandboxSite.zip)). The package contains:
      * Site (with configured *Presentation URL*)
-     * Page type (configured with url pattern `/` and enabled *Use page tab* setting)
-         * Page of this page type
+     * Page type (configured with the [url pattern](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=content_pages_url) `/` and the *Use page tab* setting enabled)
+         * A page based on this page type
      * *Web farm mode* set to *Automatic*
 
 ### Setting up the MVC application
