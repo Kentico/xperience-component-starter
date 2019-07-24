@@ -1,69 +1,75 @@
 # Kentico EMS Component Starter
 [![Build status](https://ci.appveyor.com/api/projects/status/st73cvjh2vr7r0ck?svg=true)](https://ci.appveyor.com/project/kentico/ems-mvc-component-starter/branch/master)
 
-This is a starter point to develop MVC Page Builder Components. It contains one sample widget, inline editor, form component and section.
+This repository helps you to get started with the development of [MVC page builder](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=page_builder_mvc) components. It contains an MVC application with a sample widget, inline editor, form component, and section. The MVC application needs to be connected to an instance of the [Kentico](https://www.kentico.com/product/overview) administration application to work properly.
 
-## Components development best practices
-* [Widgets](https://docs.kentico.com/k12sp/developing-websites/page-builder-development/developing-widgets-in-mvc)
-* [Sections](https://docs.kentico.com/k12sp/developing-websites/page-builder-development/developing-page-builder-sections)
-* [Form components](https://docs.kentico.com/k12sp/developing-websites/form-builder-development/developing-form-components)
-* [Inline editors](https://docs.kentico.com/k12sp/developing-websites/page-builder-development/developing-widgets-in-mvc/creating-inline-editors-for-widget-properties)
-* [Personalization condition types](https://docs.kentico.com/k12sp/on-line-marketing-features/configuring-and-customizing-your-on-line-marketing-features/content-personalization-on-mvc-sites/developing-personalization-condition-types)
+## Component development best practices
+To learn about best practices and development guidelines for [MVC page builder](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=page_builder_mvc) components, visit respective pages in the Kentico Documentation:
+* [Widgets](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=widgets_developing_mvc)
+* [Sections](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=page_builder_sections_mvc)
+* [Form components](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=formbuilder_components_mvc)
+* [Inline editors](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=widgets_inline_editors_mvc)
+* [Personalization condition types](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=dev_personalization_conditiontype_mvc)
 
-## Get started
+## Getting started
 
-1. **Download Kentico installation**
-    * [`Kentico_12_0_trial.exe` Trial](https://www.kentico.com/download-demo/trial-version)
-1. **Install Kentico** using [the command line](https://docs.kentico.com/k12sp/installation/installing-kentico-from-the-command-line/command-line-installation-xml-configuration#Commandlineinstallation-XMLconfiguration-SQL).
-    * Use [Kentico installation profile](/KenticoInstallationProfile.xml) template and define `TargetFolder` attribute of the `IIS` tag (:warning: Do not use the same location as the one you have you exe file located)
-      ```sh
-      .\Kentico_12_0_trial.exe KenticoInstallationProfile.xml
-      ```
-        * This will install Kentico Administration interface without any site
-        * If you wish to adjust the connection to the different database server, [adjust the `SQL` tag in the configuration XML](https://docs.kentico.com/k12sp/installation/installing-kentico-from-the-command-line/command-line-installation-xml-configuration#Commandlineinstallation-XMLconfiguration-SQL)
-        * If you wish to add your license to the instance, [adjust the `Licenses` tag in the configuration XML](https://docs.kentico.com/k12sp/installation/installing-kentico-from-the-command-line/command-line-installation-xml-configuration#Commandlineinstallation-XMLconfiguration-Licenses)
+### Installing the Kentico administration interface
+1. Download the [Kentico installer](https://www.kentico.com/download-demo/trial-version), if you do not have one already.
+1. To install the Kentico administration application without any site from the [command line](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=installation_cmd):
+    * Run the installer and use the [`KenticoInstallationProfile.xml`](/KenticoInstallationProfile.xml) [XML configuration](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=cmd_install_xml).
+        * Specify the location where Kentico is installed by defining the `TargetFolder` attribute of the `IIS` element. (:warning: Do not use the location where your installer `.exe` file is located)
+        * To modify the connection to a different database server, configure the `SQL` element in the [configuration XML file](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=cmd_install_xml).
+        * To add a license to the Kentico instance, adjust the `Licenses` element in the [configuration XML file](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=cmd_install_xml).
+         ```sh
+         .\Kentico_12_0_trial.exe KenticoInstallationProfile.xml
+         ```
 
-    * If you get an error about already installed program files run command for uninstalling the current program files and then run the previous command again
+    * If the installer notifies you that there are program files already installed in your system, run the following command to uninstall current Kentico program files and then rerun the previous installation command.
 
       ```sh
       .\Kentico_12_0_trial.exe /u
       ```
 
-1. **Apply the latest [hotfix](https://devnet.kentico.com/download/hotfixes)** (or at least 12.0.29)
+1. [Apply](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=upg_hotfix) the latest [hotfix](https://devnet.kentico.com/download/hotfixes).
 
-1. Run the administration instance (already registered in IIS with `_Admin` suffix) **and import [the site export package](/SandboxSite.zip)** according to the [documentation](https://docs.kentico.com/K12SP/Importing+a+site+or+objects)
-    * This package contains
-        * Site (With `Presentation URL`)
-        * Page type (configured for page builder - url pattern `/` and use tab  checkbox)
-        * Page by this page type
-        * Automatic web farms
+1. Open the administration interface (already registered in IIS with `_Admin` suffix) in your preferred browser and [import the site export package](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=site_objects_importing) ([`SandboxSite.zip`](/SandboxSite.zip)). The package contains:
+     * Site (with configured *Presentation URL*)
+     * Page type (configured with the [url pattern](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=content_pages_url) `/` and the *Use page tab* setting enabled)
+         * A page based on this page type
+     * *Web farm mode* set to *Automatic*
 
-1. **Clone this repository** to the different folder than the Kentico administration is installed
+### Setting up the MVC application
+1. Clone this repository (MVC application) to a different folder than the Kentico administration interface.
 
     ```sh
     git clone https://github.com/Kentico/ems-mvc-component-starter
     ```
 
-1. Rename [`AppSettings.config.template`](/SandboxSite/AppSettings.config.template) to `AppSettings.config` and put the **hash string salt** (`CMSHashStringSalt`) there from Kentico administration application `web.config` application settings.
+1. Rename the [`AppSettings.config.template`](/SandboxSite/AppSettings.config.template) file to `AppSettings.config` and set the hash string salt (`CMSHashStringSalt`) to match the hash string salt in the `web.config` application settings of the Kentico administration interface.
 
-1. Rename [`ConnectionStrings.config.template`](/SandboxSite/ConnectionStrings.config.template) to `ConnectionStrings.config` and put the **connection string** (`CMSConnectionString`) there from Kentico administration application `web.config` connection strings.
+1. Rename the [`ConnectionStrings.config.template`](/SandboxSite/ConnectionStrings.config.template) file to `ConnectionStrings.config` and set the connection string (`CMSConnectionString`) to match the connection string in the `web.config` application settings of the Kentico administration interface.
 
-1. Build the [`MVCComponentStarter.sln`](/MVCComponentStarter.sln).
+1. Open the MVC application solution in Visual Studio and build the [`MVCComponentStarter.sln`](/MVCComponentStarter.sln) solution.
 
-1. Download and install latest [NodeJS runtime](https://nodejs.org/en/)
+1. Download and install the latest [NodeJS runtime](https://nodejs.org/en/).
 
-1. Navigate to root of this project using console and install missing npm packages
+1. Navigate to the root of this MVC project using console and install missing npm packages:
     ```sh
     npm install
     ```
-1. After installing npm packages start DEV server for serving transpiled JavaScript files
+1. Start a DEV server for serving transpiled JavaScript files:
     ```sh
     npm run dev
     ```
 
-1. Press F5 in Visual Studio to start application using IIS express
+1. In Visual Studio, press the F5 key to start the MVC application using IIS express.
 
-1. Open the administration interface, go to Pages, select the `Home` and you could see the **page builder set up**.
+The page builder is now set up and ready to be used. To navigate to a page with the page builder:
+   1. Open the administration interface in your preferred browser.
+   1. Navigate to the *Pages* application.
+   1. Select the page named `Home` in the content tree.
+
+You can now see the [page builder interface](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=widgets_using_mvc) set up and ready to be used. You can [develop](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=page_builder_mvc) further components by following the links from the list at the top of the page.
 
 ![Starter showcase](/Starter.png)
 
