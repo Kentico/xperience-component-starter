@@ -2,11 +2,10 @@
 @using Kentico.Web.Mvc
 
 @{
-    ViewBag.Title = "Home Page";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Welcome</h1>
+<h1>@ViewBag.Title</h1>
 
 <div>
     @Html.Kentico().EditableArea("main")

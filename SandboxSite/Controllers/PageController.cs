@@ -8,13 +8,13 @@ using Kentico.Web.Mvc;
 
 namespace Kentico.AspNet.Mvc.SandboxSite
 {
-    public class HomeController : Controller
+    public class PageController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Index(string nodeAlias)
         {
             TreeNode page = DocumentHelper
-                .GetDocuments()
-                .Path("/Home")
+                .GetDocuments("SandboxSite.DevelopmentPage")
+                .WhereEquals("NodeAlias", nodeAlias)
                 .OnCurrentSite()
                 .TopN(1)
                 .FirstOrDefault();
@@ -29,6 +29,7 @@ namespace Kentico.AspNet.Mvc.SandboxSite
                 .PageBuilder()
                 .Initialize(page.DocumentID);
 
+            ViewBag.Title = page.DocumentName;
             return View();
         }
     }

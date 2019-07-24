@@ -16,15 +16,9 @@ namespace Kentico.AspNet.Mvc.SandboxSite
             routes.Kentico().MapRoutes();
 
             routes.MapRoute(
-                name: "TestPage",
-                url: "TestPage",
-                defaults: new { controller = "Home", action = "Index" }
-            );
-
-            routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}",
-                defaults: new { controller = "Home", action = "Index" }
+                name: "Page",
+                url: "Page/{nodeAlias}",
+                defaults: new { controller = "Page", action = "Index" }
             );
         }
     }
