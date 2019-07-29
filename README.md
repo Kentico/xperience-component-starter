@@ -62,10 +62,10 @@ To learn about best practices and development guidelines for [MVC page builder](
     npm run dev
     ```
 
-1. Visual Studio
-    * Restore NuGet packages for all the projects in the solution.
-    * Run the SandboxSite project by selecting the project and pressing the F5 key.
-        * Note: If you receive an error from the Roslyn compiler, to fix the error reopen the Visual Studio. This error occurs when the solution is compiled before its NuGet packages are restored.
+1. In the Visual Studio:
+    * Restore NuGet packages for all projects in the solution.
+    * Run the SandboxSite application; Select the project and press the F5 key.
+        * Note: You may receive an error from the Roslyn compiler. To fix this issue, reopen the Visual Studio. This error occurs when the solution is compiled before the NuGet packages are restored.
 
 The page builder is now set up and ready to be used. To navigate to a page with the page builder:
    1. Open the administration interface in your preferred browser.
