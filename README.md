@@ -1,9 +1,11 @@
 # Kentico EMS Component Starter
+
 [![Build status](https://ci.appveyor.com/api/projects/status/st73cvjh2vr7r0ck?svg=true)](https://ci.appveyor.com/project/kentico/ems-mvc-component-starter/branch/master)
 
 This repository helps you to get started with the development of [MVC page builder](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=page_builder_mvc) components. It contains an MVC application with a sample widget, inline editor, form component, and section. The MVC application needs to be connected to an instance of the [Kentico](https://www.kentico.com/product/overview) administration application to work properly.
 
 ## Component development best practices
+
 To learn about best practices and development guidelines for [MVC page builder](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=page_builder_mvc) components, visit respective pages in the Kentico Documentation:
 * [Widgets](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=widgets_developing_mvc)
 * [Sections](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=page_builder_sections_mvc)
@@ -11,9 +13,22 @@ To learn about best practices and development guidelines for [MVC page builder](
 * [Inline editors](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=widgets_inline_editors_mvc)
 * [Personalization condition types](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=dev_personalization_conditiontype_mvc)
 
+### Embedded Razor views
+
+The MVC Component Starter project is set-up to embed the component's Razor views into compiled DLLs to improve the component re-distribution, t. The embedding process is configured in the `Targets/Kentico.EmbeddedViews.targets` file and linked in the `MyCompany.Components.Views` project's `.csproj` file. Afterward, the build process searches for `.cshtml` files in the `Views` folder and embeds them into the final DLL. In case you make changes to the project, folder, or file names which would brake the embedding process, you need to reflect these changes in this `Kentico.EmbeddedViews.targets` file.
+
+### Component front-end development
+
+To provide a better front-end development experience for the components, a basic Webpack configuration with *npm*, *TypeScript*, and *less* pre-processor support has been pre-configured. The front-end source files of components are located in the `Assets` folder by default. You can configure this location in `wepback/constants.js` file, alongside with the component's entry file name.  By default, the name is `main.ts` or `main.less` for components that don't require custom javascript code, e.g. Sections.
+
+To start with the component development, run the `npm run dev` command. Webpack then automatically searches for changes in the source files and transpiles them in the Sandbox site's `Content` folder, where they're automatically detected by the [components system bundles](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=widgets_developing_mvc#DevelopingwidgetsinMVC-Addingscriptsandstylesforwidgets).
+
+If you want to build component scripts for production use, run the `npm run build` command. This generates both minified and non-minified versions of the production scripts inside the components `Content` folder (e.g. `MyCompany.Components/Content`).
+
 ## Getting started
 
 ### Installing the Kentico administration interface
+
 1. Download the [Kentico installer](https://www.kentico.com/download-demo/trial-version), if you do not have one already.
 1. To install the Kentico administration application without any site from the [command line](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=installation_cmd):
     * Run the installer and use the [`KenticoInstallationProfile.xml`](/KenticoInstallationProfile.xml) [XML configuration](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=cmd_install_xml).
@@ -34,7 +49,7 @@ To learn about best practices and development guidelines for [MVC page builder](
 
 1. Open the administration interface (already registered in IIS with `_Admin` suffix) in your preferred browser and [import the site export package](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=site_objects_importing) ([`SandboxSite.zip`](/SandboxSite.zip)). The package contains:
      * Site (with configured *Presentation URL*)
-     * Page type (configured with the [url pattern](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=content_pages_url) `/` and the *Use page tab* setting enabled)
+     * Page type (configured with the [URL pattern](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=content_pages_url) `/` and the *Use page tab* setting enabled)
          * A page based on this page type
      * *Web farm mode* set to *Automatic*
 
