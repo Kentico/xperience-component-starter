@@ -49,7 +49,7 @@ To learn about best practices and development guidelines for [MVC page builder](
 
 1. Rename the [`ConnectionStrings.config.template`](/SandboxSite/ConnectionStrings.config.template) file to `ConnectionStrings.config` and set the connection string (`CMSConnectionString`) to match the connection string in the `web.config` application settings of the Kentico administration interface.
 
-1. Open the MVC application solution in Visual Studio and build the [`MVCComponentStarter.sln`](/MvcComponentStarter.sln) solution.
+1. Open the MVC application solution in Visual Studio and build the [`MvcComponentStarter.sln`](/MvcComponentStarter.sln) solution.
 
 1. Download and install the latest [NodeJS runtime](https://nodejs.org/en/).
 
