@@ -15,7 +15,7 @@ To learn about best practices and development guidelines for [MVC page builder](
 
 ### Embedded Razor views
 
-The MVC Component Starter project is set-up to embed the component's Razor views into compiled DLLs to improve the component re-distribution. The embedding process is configured in the `Targets/Kentico.EmbeddedViews.targets` file and linked in the `MyCompany.Components.Views` project's `.csproj` file. Afterward, the build process searches for `.cshtml` files in the `Views` folder and embeds them into the final DLL. In case you make changes to the project, folder, or file names which would brake the embedding process, you need to reflect these changes in this `Kentico.EmbeddedViews.targets` file.
+The MVC Component Starter project is set-up to embed the component's Razor views into compiled DLLs to improve the component re-distribution. The embedding process is configured in the `Targets/Kentico.EmbeddedViews.targets` file and linked in the `MyCompany.Components.Views` project's `.csproj` file. Afterward, the build process searches for `.cshtml` files in the `Views` folder and embeds them into the final DLL. In case you make changes to the project, folder, or file names which would break the embedding process, you need to reflect these changes in this `Kentico.EmbeddedViews.targets` file.
 
 ### Component front-end development
 
