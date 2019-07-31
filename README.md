@@ -64,7 +64,10 @@ If you want to build component scripts for production use, run the `npm run buil
 
 1. Rename the [`ConnectionStrings.config.template`](/SandboxSite/ConnectionStrings.config.template) file to `ConnectionStrings.config` and set the connection string (`CMSConnectionString`) to match the connection string in the `web.config` application settings of the Kentico administration interface.
 
-1. Open the MVC application solution in Visual Studio and build the [`MvcComponentStarter.sln`](/MvcComponentStarter.sln) solution.
+1. In the Visual Studio:
+    * Open the [`MvcComponentStarter.sln`](/MvcComponentStarter.sln) solution.
+    * Restore NuGet packages for all projects in the solution.
+    * Build the solution.
 
 1. Download and install the latest [NodeJS runtime](https://nodejs.org/en/).
 
@@ -78,7 +81,6 @@ If you want to build component scripts for production use, run the `npm run buil
     ```
 
 1. In the Visual Studio:
-    * Restore NuGet packages for all projects in the solution.
     * Run the SandboxSite application; Select the project and press the F5 key.
         * Note: You may receive an error from the Roslyn compiler. To fix this issue, reopen the Visual Studio. This error occurs when the solution is compiled before the NuGet packages are restored.
 
