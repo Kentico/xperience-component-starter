@@ -8,7 +8,7 @@ window.kentico.pageBuilder.registerInlineEditor("MyCompany.InlineEditor.ImageUrl
         const input = editor.querySelector("input");
         const button = editor.querySelector(".cmp-image-url-apply");
 
-        if (button != null && input != null) {
+        if (button !== null && input !== null) {
             button.addEventListener("click", (e) => {
                 e.preventDefault();
                 const event = new CustomEvent("updateProperty", {
