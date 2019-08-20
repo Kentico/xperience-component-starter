@@ -22,7 +22,7 @@ namespace MyCompany.Components.Controllers
                 ImageUrl = properties.ImageUrl,
             };
 
-            return View("~/Views/Shared/MyCompany/Widgets/_ImageWidget.cshtml", viewModel);
+            return PartialView("~/Views/Shared/MyCompany/Widgets/_ImageWidget.cshtml", viewModel);
         }
     }
 }
