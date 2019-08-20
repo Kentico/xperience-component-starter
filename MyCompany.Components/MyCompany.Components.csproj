@@ -537,15 +537,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Assets\InlineEditors\MyCompany.ImageUrl\style.less" />
-    <None Include="Assets\Sections\MyCompany.TwoColumns\main.less" />
+    <Content Include="Assets\InlineEditors\MyCompany.ImageUrl\style.less" />
+    <Content Include="Assets\Sections\MyCompany.TwoColumns\main.less" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\FormComponents\MyCompany.ImageUrlWithPreview\style.less" />
-    <TypeScriptCompile Include="Assets\FormComponents\MyCompany.ImageUrlWithPreview\helpers.ts" />
-    <TypeScriptCompile Include="Assets\FormComponents\MyCompany.ImageUrlWithPreview\main.ts" />
-    <TypeScriptCompile Include="Assets\InlineEditors\MyCompany.ImageUrl\main.ts" />
+    <Content Include="Assets\FormComponents\MyCompany.ImageUrlWithPreview\style.less" />
+    <Content Include="Assets\FormComponents\MyCompany.ImageUrlWithPreview\helpers.ts" />
+    <Content Include="Assets\FormComponents\MyCompany.ImageUrlWithPreview\main.ts" />
+    <Content Include="Assets\InlineEditors\MyCompany.ImageUrl\main.ts" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App_Data\Global\Resources\MyCompany.Components.resx" />
