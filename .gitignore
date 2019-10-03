@@ -40,8 +40,9 @@ packages/
 
 # Ignore Nuget packages Kentico content files
 # kentico.languagepack.english
-MyCompany.*/CMSResources/*
+/*.Views/CMSResources/*
 SandboxSite/CMSResources/*
+
 # kentico.aspnet.mvc
 SandboxSite/App_Data/Global/Resources/Kentico.*
 
