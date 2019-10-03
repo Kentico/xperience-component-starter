@@ -33,6 +33,5 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name].css'
     }),
-  ],
-  devtool: '#eval-source-map',
+  ]
 }
