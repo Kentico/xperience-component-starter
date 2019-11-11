@@ -3,14 +3,14 @@
 using Kentico.PageBuilder.Web.Mvc;
 using MyCompany.Components.Controllers;
 
-[assembly: RegisterSection("MyCompany.Section.TwoColumns", typeof(TwoColumnsSectionController), "{$MyCompany.Section.TwoColumns.Name$}", Description = "{$MyCompany.Section.TwoColumns.Description$}", IconClass = "icon-l-cols-2")]
+[assembly: RegisterSection("MyCompany.Section.TwoColumns", typeof(MyCompanyTwoColumnsSectionController), "{$MyCompany.Section.TwoColumns.Name$}", Description = "{$MyCompany.Section.TwoColumns.Description$}", IconClass = "icon-l-cols-2")]
 
 namespace MyCompany.Components.Controllers
 {
     /// <summary>
     /// Controller for the two-column section.
     /// </summary>
-    public class TwoColumnsSectionController : SectionController
+    public class MyCompanyTwoColumnsSectionController : SectionController
     {
         public ActionResult Index()
         {
