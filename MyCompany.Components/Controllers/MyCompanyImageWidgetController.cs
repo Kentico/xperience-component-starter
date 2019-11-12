@@ -5,14 +5,14 @@ using Kentico.PageBuilder.Web.Mvc;
 using MyCompany.Components.Controllers;
 using MyCompany.Components.Models;
 
-[assembly: RegisterWidget("MyCompany.Widgets.Image", typeof(ImageWidgetController), "{$MyCompany.Widget.Image.Name$}", Description = "{$MyCompany.Widget.Image.Description$}", IconClass = "icon-w-image-gallery")]
+[assembly: RegisterWidget("MyCompany.Widgets.Image", typeof(MyCompanyImageWidgetController), "{$MyCompany.Widget.Image.Name$}", Description = "{$MyCompany.Widget.Image.Description$}", IconClass = "icon-w-image-gallery")]
 
 namespace MyCompany.Components.Controllers
 {
     /// <summary>
     /// Controller for the image widget.
     /// </summary>
-    public class ImageWidgetController : WidgetController<ImageWidgetProperties>
+    public class MyCompanyImageWidgetController : WidgetController<ImageWidgetProperties>
     {
         public ActionResult Index()
         {
