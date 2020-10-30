@@ -1,7 +1,7 @@
 ﻿using Kentico.Forms.Web.Mvc;
 using MyCompany.Components.Models;
 
-[assembly: RegisterFormComponent(ImageUrlWithPreviewComponent.IDENTIFIER, typeof(ImageUrlWithPreviewComponent), "{$MyCompany.FormComponent.ImageUrlWithPreview.Name$}", IsAvailableInFormBuilderEditor = false, ViewName = "~/Views/Shared/MyCompany/FormComponents/_ImageUrlWithPreview.cshtml")]
+[assembly: RegisterFormComponent(ImageUrlWithPreviewComponent.IDENTIFIER, typeof(ImageUrlWithPreviewComponent), "{$MyCompany.FormComponent.ImageUrlWithPreview.Name$}", IsAvailableInFormBuilderEditor = false, ViewName = "~/Components/FormComponents/_ImageUrlWithPreview.cshtml")]
 
 namespace MyCompany.Components.Models
 {

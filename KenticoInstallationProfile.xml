@@ -1,5 +1,5 @@
-<SilentInstall ShowProgress="CommandPrompt" Log="True" OnError="Stop" LogFile="{%programfiles%}\Kentico\12.0\setup.log" CheckRequirements="False">
-  <Setup NET="4.6.1" SetupFolder="{%programfiles%}\Kentico\12.0" DevelopmentModel="MVC" RegisterToIIS="True" WebProject="WebApplication"/>
+<SilentInstall ShowProgress="CommandPrompt" Log="True" OnError="Stop" LogFile="{%programfiles%}\Kentico\13.0\setup.log" CheckRequirements="False">
+  <Setup NET="4.8" SetupFolder="{%programfiles%}\Kentico\13.0" DevelopmentModel="AspNetCore" RegisterToIIS="True" />
   <IIS Website="Default Web Site" TargetFolder="" />
   <Modules type="InstallAll" />
   <WebTemplates type="InstallAll" />
