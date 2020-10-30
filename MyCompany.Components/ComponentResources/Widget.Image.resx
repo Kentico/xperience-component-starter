@@ -117,22 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="MyCompany.FormComponent.ImageUrlWithPreview.Name" xml:space="preserve">
-    <value>Image</value>
-  </data>
-  <data name="MyCompany.Section.TwoColumns.Description" xml:space="preserve">
-    <value>A section with two columns</value>
-  </data>
-  <data name="MyCompany.Section.TwoColumns.Name" xml:space="preserve">
-    <value>Two columns</value>
-  </data>
-  <data name="MyCompany.Widget.Image.Description" xml:space="preserve">
+  <data name="Widget.Image.Description" xml:space="preserve">
     <value>Image widget</value>
   </data>
-  <data name="MyCompany.Widget.Image.Label" xml:space="preserve">
+  <data name="Widget.Image.Label" xml:space="preserve">
     <value>Image URL</value>
   </data>
-  <data name="MyCompany.Widget.Image.Name" xml:space="preserve">
+  <data name="Widget.Image.Name" xml:space="preserve">
     <value>Image</value>
   </data>
 </root>

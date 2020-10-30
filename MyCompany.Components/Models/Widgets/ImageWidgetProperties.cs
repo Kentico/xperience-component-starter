@@ -11,7 +11,7 @@ namespace MyCompany.Components.Models
         /// <summary>
         /// Image URL.
         /// </summary>
-        [EditingComponent(ImageUrlWithPreviewComponent.IDENTIFIER, Label = "{$MyCompany.Widget.Image.Label$}", Order = 1)]
+        [EditingComponent(ImageUrlWithPreviewComponent.IDENTIFIER, Label = "{$Widget.Image.Label$}", Order = 1)]
         public string ImageUrl { get; set; }
     }
 }
