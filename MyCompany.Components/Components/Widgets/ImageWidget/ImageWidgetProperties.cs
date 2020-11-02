@@ -1,7 +1,7 @@
 ﻿using Kentico.Forms.Web.Mvc;
 using Kentico.PageBuilder.Web.Mvc;
 
-namespace MyCompany.Components.Models
+namespace MyCompany.Components
 {
     /// <summary>
     /// Image widget properties.
@@ -11,7 +11,7 @@ namespace MyCompany.Components.Models
         /// <summary>
         /// Image URL.
         /// </summary>
-        [EditingComponent(ImageUrlWithPreviewComponent.IDENTIFIER, Label = "{$Widget.Image.Label$}", Order = 1)]
+        [EditingComponent(ImageUrlWithPreviewFormComponent.IDENTIFIER, Label = "{$Widget.Image.Label$}", Order = 1)]
         public string ImageUrl { get; set; }
     }
 }

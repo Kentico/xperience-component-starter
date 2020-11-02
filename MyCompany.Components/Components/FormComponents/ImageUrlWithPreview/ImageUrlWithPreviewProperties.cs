@@ -1,14 +1,14 @@
 ﻿using CMS.DataEngine;
 using Kentico.Forms.Web.Mvc;
 
-namespace MyCompany.Components.Models
+namespace MyCompany.Components
 {
     /// <summary>
     /// Properties of the Image URL with preview form component.
     /// </summary>
     public class ImageUrlWithPreviewProperties : FormComponentProperties<string>
     {
-        [DefaultValueEditingComponent(ImageUrlWithPreviewComponent.IDENTIFIER)]
+        [DefaultValueEditingComponent(ImageUrlWithPreviewFormComponent.IDENTIFIER)]
         public override string DefaultValue { get; set; }
 
 

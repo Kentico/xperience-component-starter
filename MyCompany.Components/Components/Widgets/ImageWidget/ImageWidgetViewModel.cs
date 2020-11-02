@@ -1,4 +1,4 @@
-﻿namespace MyCompany.Components.Models
+﻿namespace MyCompany.Components
 {
     /// <summary>
     /// View model for image widget.

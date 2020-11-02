@@ -1,17 +1,18 @@
 ﻿using Kentico.Forms.Web.Mvc;
-using MyCompany.Components.Models;
 
-[assembly: RegisterFormComponent(ImageUrlWithPreviewComponent.IDENTIFIER, typeof(ImageUrlWithPreviewComponent), "{$MyCompany.FormComponent.ImageUrlWithPreview.Name$}", IsAvailableInFormBuilderEditor = false, ViewName = "~/Components/FormComponents/_ImageUrlWithPreview.cshtml")]
+using MyCompany.Components;
 
-namespace MyCompany.Components.Models
+[assembly: RegisterFormComponent(ImageUrlWithPreviewFormComponent.IDENTIFIER, typeof(ImageUrlWithPreviewFormComponent), "{$MyCompany.FormComponent.ImageUrlWithPreview.Name$}", IsAvailableInFormBuilderEditor = false, ViewName = "~/Components/FormComponents/ImageUrlWithPreview/_ImageUrlWithPreview.cshtml")]
+
+namespace MyCompany.Components
 {
     /// <summary>
     /// Image URL with preview form component.
     /// </summary>
-    public class ImageUrlWithPreviewComponent : FormComponent<ImageUrlWithPreviewProperties, string>
+    public class ImageUrlWithPreviewFormComponent : FormComponent<ImageUrlWithPreviewProperties, string>
     {
         /// <summary>
-        /// Represents the <see cref="ImageUrlWithPreviewComponent"/> identifier.
+        /// Represents the <see cref="ImageUrlWithPreviewFormComponent"/> identifier.
         /// </summary>
         public const string IDENTIFIER = "MyCompany.FormComponent.ImageUrlWithPreview";
 
