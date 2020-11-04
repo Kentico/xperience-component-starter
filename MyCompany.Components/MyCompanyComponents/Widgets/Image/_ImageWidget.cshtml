@@ -1,9 +1,4 @@
-﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-
-@using Kentico.PageBuilder.Web.Mvc
-@using MyCompany.Components
-
-@model ImageWidgetViewModel
+﻿@model ImageWidgetViewModel
 
 @inject IPageBuilderDataContextRetriever pageBuilderContext
 
@@ -15,6 +10,6 @@
     <img src="@imageUrl" />
     @if (pageBuilderContext.Retrieve().EditMode)
     {
-        <partial name="~/Components/InlineEditors/_ImageUrl.cshtml" model="Model" />
+        <partial name="~/MyCompanyComponents/InlineEditors/_ImageUrl.cshtml" model="Model" />
     }
 </div>

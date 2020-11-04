@@ -2,7 +2,7 @@
 
 using MyCompany.Components;
 
-[assembly: RegisterFormComponent(ImageUrlWithPreviewFormComponent.IDENTIFIER, typeof(ImageUrlWithPreviewFormComponent), "{$MyCompany.FormComponent.ImageUrlWithPreview.Name$}", IsAvailableInFormBuilderEditor = false, ViewName = "~/Components/FormComponents/ImageUrlWithPreview/_ImageUrlWithPreview.cshtml")]
+[assembly: RegisterFormComponent(ImageUrlWithPreviewFormComponent.IDENTIFIER, typeof(ImageUrlWithPreviewFormComponent), "{$MyCompany.FormComponent.ImageUrlWithPreview.Name$}", IsAvailableInFormBuilderEditor = false, ViewName = "~/MyCompanyComponents/FormComponents/ImageUrlWithPreview/_ImageUrlWithPreview.cshtml")]
 
 namespace MyCompany.Components
 {

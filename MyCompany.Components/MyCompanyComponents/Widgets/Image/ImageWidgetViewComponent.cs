@@ -18,7 +18,7 @@ namespace MyCompany.Components
                 ImageUrl = componentViewModel.Properties.ImageUrl,
             };
 
-            return View("~/Components/Widgets/ImageWidget/_ImageWidget.cshtml", viewModel);
+            return View("~/MyCompanyComponents/Widgets/Image/_ImageWidget.cshtml", viewModel);
         }
     }
 }
