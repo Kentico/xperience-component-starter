@@ -7,10 +7,21 @@ using MyCompany.Components;
 
 namespace MyCompany.Components
 {
+    /// <summary>
+    /// Image widget view component.
+    /// </summary>
     public class ImageWidgetViewComponent : ViewComponent
     {
+        /// <summary>
+        /// Identifier.
+        /// </summary>
         public const string IDENTIFIER = "MyCompany.Widgets.Image";
 
+
+        /// <summary>
+        /// Invoke.
+        /// </summary>
+        /// <param name="componentViewModel">Component view model.</param>
         public IViewComponentResult Invoke(ComponentViewModel<ImageWidgetProperties> componentViewModel)
         {
             var viewModel = new ImageWidgetViewModel

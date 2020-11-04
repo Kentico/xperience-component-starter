@@ -6,7 +6,7 @@ using MyCompany.Components.MyCompanyComponents.Widgets.Image;
 
 namespace MyCompany.Components.MyCompanyComponents.Widgets.Image
 {
-    public class ImageWidgetResources
+    internal class ImageWidgetResources
     {
     }
 }

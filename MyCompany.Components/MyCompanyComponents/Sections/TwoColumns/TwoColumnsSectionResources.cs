@@ -6,7 +6,7 @@ using MyCompany.Components.MyCompanyComponents.Sections.TwoColumns;
 
 namespace MyCompany.Components.MyCompanyComponents.Sections.TwoColumns
 {
-    public class TwoColumnsSectionResources
+    internal class TwoColumnsSectionResources
     {
     }
 }
