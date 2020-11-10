@@ -2,11 +2,11 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/st73cvjh2vr7r0ck?svg=true)](https://ci.appveyor.com/project/kentico/ems-mvc-component-starter/branch/master)
 
-This repository helps you to get started with the development of [MVC page builder](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=page_builder_mvc) components. It contains an ASP.NET Core application with a sample widget, inline editor, form component, and section. The application needs to be connected to an instance of the [Xperience](https://xperience.io/product) administration application to work properly.
+This repository helps you to get started with the development of [MVC page builder](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=core_pagebuilder_root) components. It contains an ASP.NET Core application with a sample widget, inline editor, form component, and section. The application needs to be connected to an instance of the [Xperience](https://xperience.io/product) administration application to work properly.
 
 ## Component development best practices
 
-To learn about best practices and development guidelines for [MVC page builder](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=page_builder_mvc) components, visit respective pages in the Xperience Documentation:
+To learn about best practices and development guidelines for [MVC page builder](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=core_pagebuilder_root) components, visit respective pages in the Xperience Documentation:
 * [Widgets](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=core_pagebuilder_widgets)
 * [Sections](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=core_pagebuilder_sections)
 * [Form components](https://kentico.com/CMSPages/DocLinkMapper.ashx?version=latest&link=formbuilder_components_mvc)
