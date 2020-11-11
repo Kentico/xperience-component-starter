@@ -55,7 +55,7 @@ If you want to build component scripts for production use, run the `npm run buil
 1. Clone this repository (MVC application) to a different folder than the Xperience administration interface.
 
     ```sh
-    git clone https://github.com/Kentico/ems-mvc-component-starter
+    git clone https://github.com/Kentico/xperience-component-starter
     ```
 
 1. Rename the [`appsettings.Development.template`](/SandboxSite/appsettings.Development.template) file to `appsettings.Development.json` and set both the connection string (`CMSConnectionString`) and the hash string salt (`CMSHashStringSalt`) to match the connection string and the hash string salt in the `web.config` application settings of the Xperience administration interface.
