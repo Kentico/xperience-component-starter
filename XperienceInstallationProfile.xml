@@ -1,0 +1,8 @@
+<SilentInstall ShowProgress="CommandPrompt" Log="True" OnError="Stop" LogFile="{%programfiles%}\Kentico\13.0\setup.log" CheckRequirements="False">
+  <Setup NET="4.8" SetupFolder="{%programfiles%}\Kentico\13.0" DevelopmentModel="AspNetCore" RegisterToIIS="True" />
+  <IIS Website="Default Web Site" TargetFolder="" />
+  <Modules type="InstallAll" />
+  <WebTemplates type="InstallAll" />
+  <UICultures type="InstallAll" />
+  <Dictionaries type="InstallAll" />
+</SilentInstall>

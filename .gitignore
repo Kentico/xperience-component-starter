@@ -29,34 +29,19 @@ Thumbs.db
 # Visual Studio cache/options directory
 .vs/
 
-# Ignore Administration Kentico site
-CMS/
-Lib/
-GlobalAssemblyInfo.cs
-WebApp.sln
-
 # Ignore nuget packages
 packages/
 
-# Ignore Nuget packages Kentico content files
-# kentico.languagepack.english
-/*.Views/CMSResources/*
-SandboxSite/CMSResources/*
-
-# kentico.aspnet.mvc
-SandboxSite/App_Data/Global/Resources/Kentico.*
-
 # Ignore component development files
-SandboxSite/App_Data/Global/Resources/MyCompany.*
-SandboxSite/Content/*
+SandboxSite/wwwroot/PageBuilder/Admin/*
+SandboxSite/wwwroot/FormBuilder/Admin/*
 
 # Kentico application data files
 /SandboxSite/App_Data/CMSModules/WebFarm/*.sync
 /SandboxSite/App_Data/CMSModules/SmartSearch
 
-# Actual config files
-/SandboxSite/AppSettings.config
-/SandboxSite/ConnectionStrings.config
+# Dev config files
+/SandboxSite/appsettings.Development.json
 
 # Ignore nuild nuget packages
 /SandboxSite/*.nupkg

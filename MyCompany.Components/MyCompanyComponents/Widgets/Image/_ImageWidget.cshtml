@@ -1,0 +1,15 @@
+﻿@model ImageWidgetViewModel
+
+@inject IPageBuilderDataContextRetriever pageBuilderContext
+
+@{ 
+    var imageUrl = string.IsNullOrWhiteSpace(Model.ImageUrl) ? Model.PlaceholderUrl : Model.ImageUrl;
+}
+
+<div>
+    <img src="@imageUrl" />
+    @if (pageBuilderContext.Retrieve().EditMode)
+    {
+        <partial name="~/MyCompanyComponents/InlineEditors/_ImageUrl.cshtml" model="Model" />
+    }
+</div>
