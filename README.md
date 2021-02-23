@@ -88,4 +88,3 @@ You can now see the [page builder interface](https://kentico.com/CMSPages/DocLin
 
 ![Starter showcase](/Starter.png)
 
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/ems-mvc-component-starter?pixel)
